@@ -76,6 +76,7 @@ const Header: React.FC<Headerprops> = ({
                     <RxCaretRight className="text-white" size={35} />
 
                 </button>
+           
             </div>
                 <div className=" flex md:hidden gap-x-2 items-center">
                     <button
@@ -98,6 +99,8 @@ const Header: React.FC<Headerprops> = ({
                             rounded-full
                             p-2
                             bg-white
+                     
+                            
                             flex
                             items-center
                             justify-center
@@ -107,8 +110,9 @@ const Header: React.FC<Headerprops> = ({
                     >
                         <BiSearch className= " text-black" size={20}/>
                     </button>
+                    </div>
                     <div 
-                    className =" 
+                        className =" 
                         flex 
                         justify-between
                         items-center
@@ -117,15 +121,25 @@ const Header: React.FC<Headerprops> = ({
                      >
                         <>
                             <div>
-
-                               <Button />
-
-                            </div>                   
-                        
-                        </>
-                    </div>
+                               <Button
+                               onClick={() =>{}}
+                                className=" bg-transparent text-neutral-300 font-medium"
+                               >
+                                Sign Up
+                               </Button>
+                            </div>
+                            <div>
+                               <Button
+                                onClick={() =>{}}
+                                className=" bg-white px-6 py-2"
+                               >
+                                Log In
+                               </Button>
+                            </div>                                          
+                        </>                    
                 </div>
-            </div>               
+            </div>
+            {children}               
         </div>
       );
 }
