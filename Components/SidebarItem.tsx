@@ -43,12 +43,6 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             <p className=" truncate w-100">{label}</p>
         </Link>
 
-       
-        
-
-                  
-
-
       );
 
 }
